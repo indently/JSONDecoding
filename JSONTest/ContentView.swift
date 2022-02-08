@@ -8,9 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var sample: Person = Person.samplePerson
+    private var people: [Person] = Person.allPeople
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("\(sample.firstName) + \(sample.surname)")
+                Text("\(sample.phoneNumbers[0].number)")
+                Text("\(sample.address.streetAddress)")
+                Text("\(sample.address.city)")
+            }
+            
+            VStack {
+                List {
+                    ForEach(people, id: \.firstName) { person in
+                        Text("\(person.firstName) \(person.surname)")
+                    }
+                }
+            }
+        }
+        .onAppear {
+            print("\(people)")
+        }
     }
 }
 

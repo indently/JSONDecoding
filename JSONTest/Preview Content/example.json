@@ -1,0 +1,32 @@
+[
+    {
+        "firstName": "Mario",
+        "surname": "Pomodoro",
+        "gender": "Male",
+        "age": 24,
+        "address": {
+            "streetAddress": "Via Mushroom 126",
+            "city": "Mushroom City",
+            "state": "Mushroom Kingdom",
+            "postalCode": "111222"
+        },
+        "phoneNumbers": [
+            { "type": "home", "number": "+390212345678" }
+        ]
+    },
+    {
+        "firstName": "Luigi",
+        "surname": "Pomodoro",
+        "gender": "Male",
+        "age": 25,
+        "address": {
+            "streetAddress": "Via Mushroom 126",
+            "city": "Mushroom City",
+            "state": "Mushroom Kingdom",
+            "postalCode": "111222"
+        },
+        "phoneNumbers": [
+            { "type": "home", "number": "+390212345679" }
+        ]
+    }
+]
