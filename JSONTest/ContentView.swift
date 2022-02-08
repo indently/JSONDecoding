@@ -8,28 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    private var sample: Person = Person.samplePerson
     private var people: [Person] = Person.allPeople
-
+    
     var body: some View {
-        VStack {
-            VStack(alignment: .leading, spacing: 10) {
-                Text("\(sample.firstName) + \(sample.surname)")
-                Text("\(sample.phoneNumbers[0].number)")
-                Text("\(sample.address.streetAddress)")
-                Text("\(sample.address.city)")
-            }
-            
-            VStack {
-                List {
-                    ForEach(people, id: \.firstName) { person in
-                        Text("\(person.firstName) \(person.surname)")
+        
+        NavigationView {
+            List {
+                ForEach(people, id: \.firstName) { person in
+                    NavigationLink(destination: DetailView(person: person)) {
+                        VStack(alignment: .leading) {
+                            Text("\(person.firstName) \(person.surname)")
+                                .bold()
+                            Text("\(person.phoneNumbers[0].number)")
+                                .foregroundColor(.gray)
+                        }
+                        .padding(6)
                     }
                 }
             }
-        }
-        .onAppear {
-            print("\(people)")
+            .navigationTitle("Phonebook")
         }
     }
 }

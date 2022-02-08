@@ -13,6 +13,7 @@
 		7A1EC33C27B27E5800B432BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EC33B27B27E5800B432BF /* Preview Assets.xcassets */; };
 		7A1EC34327B27E9900B432BF /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EC34227B27E9900B432BF /* JSONManager.swift */; };
 		7A1EC34527B27FC000B432BF /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EC34427B27FC000B432BF /* example.json */; };
+		7A1EC34727B2914600B432BF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EC34627B2914600B432BF /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7A1EC33B27B27E5800B432BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A1EC34227B27E9900B432BF /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		7A1EC34427B27FC000B432BF /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		7A1EC34627B2914600B432BF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				7A1EC33427B27E5600B432BF /* JSONTestApp.swift */,
 				7A1EC34227B27E9900B432BF /* JSONManager.swift */,
 				7A1EC33627B27E5600B432BF /* ContentView.swift */,
+				7A1EC34627B2914600B432BF /* DetailView.swift */,
 				7A1EC33827B27E5800B432BF /* Assets.xcassets */,
 				7A1EC33A27B27E5800B432BF /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A1EC33727B27E5600B432BF /* ContentView.swift in Sources */,
+				7A1EC34727B2914600B432BF /* DetailView.swift in Sources */,
 				7A1EC34327B27E9900B432BF /* JSONManager.swift in Sources */,
 				7A1EC33527B27E5600B432BF /* JSONTestApp.swift in Sources */,
 			);

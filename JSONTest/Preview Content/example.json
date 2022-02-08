@@ -28,5 +28,20 @@
         "phoneNumbers": [
             { "type": "home", "number": "+390212345679" }
         ]
+    },
+    {
+        "firstName": "Toad",
+        "surname": "Toad",
+        "gender": "Male",
+        "age": 90,
+        "address": {
+            "streetAddress": "Via Mushroom 300",
+            "city": "Mushroom City",
+            "state": "Mushroom Kingdom",
+            "postalCode": "111222"
+        },
+        "phoneNumbers": [
+            { "type": "home", "number": "+390214345679" }
+        ]
     }
 ]
